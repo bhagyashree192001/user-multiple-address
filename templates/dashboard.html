@@ -1,0 +1,8 @@
+<ul class="list-group">
+    {% for t in tasks %}
+        <li class="list-group-item">
+            {{ t.task }}
+            <small class="float-end text-muted">{{ t.created_at }}</small>
+        </li>
+    {% endfor %}
+</ul>
